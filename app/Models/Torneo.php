@@ -9,6 +9,8 @@ class Torneo extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['nombre', 'year', 'cantidad_fechas'];
+
     public function equipos()
     {
         return $this->belongsToMany(Equipo::class, 'equipo');

@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nombre');
             $table->integer('year');
             $table->integer('categoria');
+            $table->integer('cantidad_fechas');
             $table->timestamps();
         });
     }
